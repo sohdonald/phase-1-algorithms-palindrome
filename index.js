@@ -5,7 +5,7 @@ function isPalindrome(word) {
   const splitString = word.split('');
   // word.split is a method
   // that divides the string into a list of substrings
-  
+
   // substrings are the parts that make up a string
 
   // thus, each letter is turned into a substring 
@@ -22,7 +22,11 @@ function isPalindrome(word) {
   //reverseArray.join takes the new array
   // created by reverseArray
   // glues it together
-  // then returns it back as a new string 
+  // then returns it back as a new string
+  
+  //time complexity is O(3n)
+  // if there was 10 words, that would take 30 steps
+  // too many steps, need less steps
 
   if(word === newString) {
     return true;
@@ -74,3 +78,7 @@ if (require.main === module) {
 }
 
 module.exports = isPalindrome;
+
+// O(1) - Constant Time/Space
+// O(n) - Linear Time/Space
+// O(n^2) - Quadratic Time/Space
